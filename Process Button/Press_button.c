@@ -19,7 +19,7 @@ void Press_button(void)
 		{
 			ModbusMaster_writeSingleRegister(0x09,0x7D0,0x00);
 		}	
-		else if(HAL_GPIO_ReadPin(X8_GPIO_Port,X8_Pin) == 0)
+		else if(HAL_GPIO_ReadPin(X8_GPIO_Port,X8_Pin) == 0)//Emc
 		{
 			ModbusMaster_writeSingleRegister(0x09,0x7D1,0x03);
 		}
